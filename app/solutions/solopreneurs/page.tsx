@@ -4,18 +4,33 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 export default function SolopreneursPage() {
   const problems = [
-    "Managing finances and accounting on your own",
-    "Tracking income and expenses",
-    "Invoicing clients and getting paid on time",
-    "Staying organized and managing time effectively",
+    {
+      'subtitle': "Keeping your books",
+      'details': "Managing finances and accounting on your own can be daunting when you're starting. Getting it wrong can cause unneccessary delays when you're seeking financing or investment as your business grows.",
+    },
+    {
+      'subtitle': "Managing your cashflow",
+      'details': "Cash is the lifeblood of your business. Understanding where every cedi coming into and going out of your business is critical to keep your dream alive.",
+    },
+    {
+      'subtitle': "Money is tight",
+      'details': "Being an soloprenuer is hard. Each cedi has a lot of jobs to do and it can be difficult to find the right kind of help keeping your business's records in good shape.",
+    },
   ]
 
   const solutions = [
-    "Simplified accounting tools for easy tracking",
-    "Automated invoicing and payment reminders",
-    "Centralized dashboard for managing tasks and deadlines",
-    "Time tracking and project management tools",
-    "Mobile access to manage your business on the go",
+    {
+      'subtitle': "Free plan",
+      'details': "We've been there and we understand the struggle. Our free solopreneur plan is here to help, providing your with the essentials you need to keep your books properly. ",
+    },
+    {
+      'subtitle': "Intuitive Tools",
+      'details': "Our team has used its very extensive understanding of the African business environemnt to build a platform that is easy to use so you can focus on the core of your business.",
+    },
+    {
+      'subtitle': "Accessible Financial reporting",
+      'details': "Our financial reporting tools provide you with realtime data and insights about your business.",
+    },
   ]
 
   return (
@@ -38,7 +53,7 @@ export default function SolopreneursPage() {
             </div>
             <div className="relative">
               <img
-                src="/placeholder.svg?height=400&width=600"
+                src="/images/solutions-solopreneur.jpg?height=500&width=500"
                 alt="Solopreneur working efficiently"
                 className="rounded-lg shadow-lg"
               />
@@ -65,11 +80,11 @@ export default function SolopreneursPage() {
                     <span className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center text-primary">
                       {index + 1}
                     </span>
-                    Challenge
+                    {problem.subtitle}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-lg">{problem}</p>
+                  <p className="text-lg">{problem.details}</p>
                 </CardContent>
               </Card>
             ))}
@@ -92,8 +107,8 @@ export default function SolopreneursPage() {
               <div key={index} className="flex items-start gap-4">
                 <CheckCircle2 className="h-6 w-6 text-primary shrink-0 mt-1" />
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Solution {index + 1}</h3>
-                  <p className="text-muted-foreground">{solution}</p>
+                  <h3 className="text-xl font-semibold mb-2">{solution.subtitle}</h3>
+                  <p className="text-muted-foreground">{solution.details}</p>
                 </div>
               </div>
             ))}
@@ -101,7 +116,7 @@ export default function SolopreneursPage() {
         </div>
       </section>
 
-      {/* Testimonial Section */}
+      {/* Testimonial Section
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-primary/5">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8">
@@ -119,7 +134,7 @@ export default function SolopreneursPage() {
             <footer className="font-medium">— Sarah Johnson, Graphic Designer</footer>
           </blockquote>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">

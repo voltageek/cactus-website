@@ -4,19 +4,47 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 export default function EnterprisePage() {
   const problems = [
-    "Integrating disparate systems and data sources",
-    "Managing complex workflows and processes",
-    "Ensuring data security and compliance",
-    "Gaining real-time visibility into business performance",
+    {
+      'subtitle': "Integrating disparate systems and data sources",
+      'details': "Enterprises often struggle with integrating various systems and data sources, leading to data silos and inefficiencies.",
+    },
+    {
+      'subtitle': "Managing complex workflows and processes",
+      'details': "Complex workflows and processes can be difficult to manage, resulting in bottlenecks and reduced productivity.",
+    },
+    {
+      'subtitle': "Ensuring data security and compliance",
+      'details': "Maintaining data security and complying with industry regulations is a critical challenge for enterprises.",
+    },
+    {
+      'subtitle': "Gaining real-time visibility into business performance",
+      'details': "Enterprises need real-time visibility into their business performance to make informed decisions and respond quickly to changing market conditions.",
+    },
   ]
 
   const solutions = [
-    "Customizable integrations with existing systems",
-    "Advanced workflow automation capabilities",
-    "Robust security features and compliance certifications",
-    "Real-time dashboards and reporting for data-driven decision-making",
-    "Scalable architecture to support global operations",
+    {
+      'subtitle': "Customizable integrations with existing systems",
+      'details': "Our platform offers customizable integrations with existing systems, breaking down data silos and improving data flow.",
+    },
+    {
+      'subtitle': "Advanced workflow automation capabilities",
+      'details': "We provide advanced workflow automation capabilities to streamline complex processes and improve productivity.",
+    },
+    {
+      'subtitle': "Robust security features and compliance certifications",
+      'details': "Our solution includes robust security features and compliance certifications to ensure data security and meet regulatory requirements.",
+    },
+    {
+      'subtitle': "Real-time dashboards and reporting for data-driven decision-making",
+      'details': "We offer real-time dashboards and reporting tools that provide enterprises with the insights they need to make data-driven decisions.",
+    },
+    {
+      'subtitle': "Scalable architecture to support global operations",
+      'details': "Our scalable architecture supports global operations, allowing enterprises to expand their reach without compromising performance.",
+    },
   ]
+
 
   return (
     <div className="bg-background min-h-screen">
@@ -38,7 +66,7 @@ export default function EnterprisePage() {
             </div>
             <div className="relative">
               <img
-                src="/placeholder.svg?height=400&width=600"
+                src="/images/solutions-enterprise.jpg?height=500&width=500"
                 alt="Enterprise with interconnected systems"
                 className="rounded-lg shadow-lg"
               />
@@ -65,11 +93,11 @@ export default function EnterprisePage() {
                     <span className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center text-primary">
                       {index + 1}
                     </span>
-                    Challenge
+                    {problem.subtitle}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-lg">{problem}</p>
+                  <p className="text-lg">{problem.details}</p>
                 </CardContent>
               </Card>
             ))}
@@ -92,8 +120,8 @@ export default function EnterprisePage() {
               <div key={index} className="flex items-start gap-4">
                 <CheckCircle2 className="h-6 w-6 text-primary shrink-0 mt-1" />
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Solution {index + 1}</h3>
-                  <p className="text-muted-foreground">{solution}</p>
+                  <h3 className="text-xl font-semibold mb-2">{solution.subtitle}</h3>
+                  <p className="text-muted-foreground">{solution.details}</p>
                 </div>
               </div>
             ))}
@@ -160,7 +188,7 @@ export default function EnterprisePage() {
         </div>
       </section>
 
-      {/* Case Study Section */}
+      {/* Case Study Section
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8">
@@ -199,7 +227,7 @@ export default function EnterprisePage() {
             </blockquote>
           </Card>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-primary/5">

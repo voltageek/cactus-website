@@ -9,21 +9,21 @@ export default function FeaturesPage() {
       description: "Streamline your daily operations with our comprehensive operations management tools.",
       icon: Settings,
       benefits: ["Efficient task management", "Real-time tracking and monitoring", "Automated workflows"],
-      image: "/placeholder.svg?height=300&width=500",
+      image: "/images/features-1.jpg?height=400&width=400",
     },
     {
       title: "Financial Accounting",
       description: "Manage your finances with ease using our robust accounting features.",
       icon: DollarSign,
       benefits: ["Automated bookkeeping", "Invoice and payment management", "Financial reporting"],
-      image: "/placeholder.svg?height=300&width=500",
+      image: "/images/features-2.jpg?height=500&width=500",
     },
     {
       title: "Reporting and Analytics",
       description: "Gain valuable insights into your business with our advanced reporting and analytics tools.",
       icon: BarChart3,
       benefits: ["Customizable reports", "Real-time dashboards", "Data visualization"],
-      image: "/placeholder.svg?height=300&width=500",
+      image: "/images/features-3.jpg?height=300&width=500",
     },
   ]
 

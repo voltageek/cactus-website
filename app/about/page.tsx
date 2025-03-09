@@ -22,13 +22,13 @@ export default function AboutPage() {
       description: "Launched web development services using Joomla and PHP to complement our software solutions.",
     },
     {
-      year: "2019",
+      year: "2021",
       title: "Cloud Transformation",
       description:
         "Began transitioning our solutions to cloud-based platforms for improved accessibility and scalability.",
     },
     {
-      year: "2024",
+      year: "2025",
       title: "AI Integration",
       description: "Started exploring AI solutions to enhance our products and prepare for the future of technology.",
     },
@@ -68,19 +68,19 @@ export default function AboutPage() {
     },
     {
       name: "Kofi Bayitse",
-      position: "Chief Technology Officer",
+      position: "Chief Operations Officer",
       image: "/placeholder.svg?height=300&width=300",
       initials: "KB",
     },
     {
       name: "Kwame Nkansah",
-      position: "Head of Software Development",
+      position: "",
       image: "/placeholder.svg?height=300&width=300",
       initials: "KN",
     },
     {
       name: "Isaac Woollams",
-      position: "Chief Financial Officer",
+      position: "",
       image: "/placeholder.svg?height=300&width=300",
       initials: "IW",
     },
@@ -101,11 +101,6 @@ export default function AboutPage() {
       title: "Big Data & Analytics",
       description: "Supporting clients with deeper insights into customer behavior, risk, and fraud",
       icon: "📊",
-    },
-    {
-      title: "Blockchain Technology",
-      description: "Enhanced security in financial transactions, smart contracts, and improved audit trails",
-      icon: "🔗",
     },
     {
       title: "Internet of Things (IoT)",
@@ -185,7 +180,6 @@ export default function AboutPage() {
                       <div className={`bg-card rounded-lg p-6 shadow ${index % 2 === 0 ? "md:mr-8" : "md:ml-8"}`}>
                         <div className="flex items-center mb-4">
                           <div className="bg-primary/10 text-primary rounded-full p-2 mr-4">
-                            <Calendar className="h-5 w-5" />
                           </div>
                           <h3 className="text-xl font-bold">
                             {item.year} - {item.title}

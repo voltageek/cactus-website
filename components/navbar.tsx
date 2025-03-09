@@ -34,7 +34,10 @@ export default function Navbar() {
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center gap-2">
             <div className="h-8 w-8 rounded-md bg-primary flex items-center justify-center text-primary-foreground font-bold text-xl">
-              C
+            <img
+                src="/cactus_logo.png?height=48&width=48"
+                alt="Cactus Corporation Mission"
+              />
             </div>
             <span className="font-bold text-xl hidden sm:inline-block">CactusERP</span>
           </Link>

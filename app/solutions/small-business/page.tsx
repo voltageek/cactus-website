@@ -4,18 +4,33 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 export default function SmallBusinessPage() {
   const problems = [
-    "Managing inventory and supply chain",
-    "Tracking sales and customer data",
-    "Generating financial reports and insights",
-    "Scaling operations efficiently",
+    {
+      'subtitle': "Navigating Tax Requirements",
+      'details': "Understanding and complying with local tax regulations can be complex and time-consuming, often requiring resources that small businesses may not have readily available.",
+    },
+    {
+      'subtitle': "Access to Financing",
+      'details': "Securing funding is a significant challenge, with many small businesses struggling to access loans or investment due to stringent requirements and limited financial history.",
+    },
+    {
+      'subtitle': "Infrastructure Limitations",
+      'details': "Inconsistent power supply and limited internet connectivity can hinder operations, making it difficult to maintain smooth business processes and communication.",
+    },
   ]
 
   const solutions = [
-    "Inventory management tools to optimize stock levels",
-    "CRM features to track customer interactions and sales",
-    "Comprehensive reporting and analytics dashboards",
-    "Scalable platform to support business growth",
-    "Team collaboration tools for improved productivity",
+    {
+      'subtitle': "Simplified Tax Management",
+      'details': "Our platform offers tools to help you easily navigate and comply with local tax regulations, saving you time and reducing the risk of errors.",
+    },
+    {
+      'subtitle': "Flexible Financing Options",
+      'details': "We provide resources and guidance to help small businesses access financing, including loan application support and connections to potential investors.",
+    },
+    {
+      'subtitle': "Reliable Infrastructure Solutions",
+      'details': "Our solutions include tools to help manage operations efficiently, even in areas with inconsistent power supply and limited internet connectivity.",
+    },
   ]
 
   return (
@@ -37,7 +52,7 @@ export default function SmallBusinessPage() {
             </div>
             <div className="relative">
               <img
-                src="/placeholder.svg?height=400&width=600"
+                src="/images/solutions-small-business.jpg?height=500&width=500"
                 alt="Small business team collaborating"
                 className="rounded-lg shadow-lg"
               />
@@ -64,11 +79,11 @@ export default function SmallBusinessPage() {
                     <span className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center text-primary">
                       {index + 1}
                     </span>
-                    Challenge
+                    {problem.subtitle}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-lg">{problem}</p>
+                  <p className="text-lg">{problem.details}</p>
                 </CardContent>
               </Card>
             ))}
@@ -92,8 +107,8 @@ export default function SmallBusinessPage() {
               <div key={index} className="flex items-start gap-4">
                 <CheckCircle2 className="h-6 w-6 text-primary shrink-0 mt-1" />
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Solution {index + 1}</h3>
-                  <p className="text-muted-foreground">{solution}</p>
+                  <h3 className="text-xl font-semibold mb-2">{solution.subtitle}</h3>
+                  <p className="text-muted-foreground">{solution.details}</p>
                 </div>
               </div>
             ))}
@@ -146,7 +161,7 @@ export default function SmallBusinessPage() {
         </div>
       </section>
 
-      {/* Testimonial Section */}
+      {/* Testimonial Section
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8">
@@ -164,7 +179,7 @@ export default function SmallBusinessPage() {
             <footer className="font-medium">— Michael Chen, Retail Store Owner</footer>
           </blockquote>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-primary/5">
