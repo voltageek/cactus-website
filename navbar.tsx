@@ -72,11 +72,9 @@ export default function Navbar() {
 
         {/* CTA Buttons */}
         <div className="hidden md:flex items-center gap-4">
-          <Button variant="ghost" asChild>
-            <a href="/login">Log in</a>
-          </Button>
           <Button asChild>
-            <a href="/signup">Get Started</a>
+          <a href="https://portal.cactuserp.org/dashboard">Get Started</a>
+
           </Button>
         </div>
 
@@ -139,13 +137,8 @@ export default function Navbar() {
                 </nav>
                 <div className="mt-auto border-t py-6 flex flex-col gap-4">
                   <SheetClose asChild>
-                    <Button variant="outline" className="w-full" asChild>
-                      <a href="/login">Log in</a>
-                    </Button>
-                  </SheetClose>
-                  <SheetClose asChild>
                     <Button className="w-full" asChild>
-                      <a href="/signup">Get Started</a>
+                      <a href="https://portal.cactuserp.org/dashboard">Get Started</a>
                     </Button>
                   </SheetClose>
                 </div>

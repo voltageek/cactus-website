@@ -15,12 +15,11 @@ export default function HomePage() {
             insights for your business.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="https://portal.cactuserp.org/dashboard">
             <Button size="lg" className="gap-2">
               Get Started <ArrowRight className="h-4 w-4" />
             </Button>
-            <Button size="lg" variant="outline">
-              Book a Demo
-            </Button>
+            </a>
           </div>
         </div>
       </section>

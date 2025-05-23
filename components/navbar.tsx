@@ -77,10 +77,10 @@ export default function Navbar() {
         {/* CTA Buttons */}
         <div className="hidden md:flex items-center gap-4">
           <Button variant="ghost" asChild>
-            <Link href="/login">Log in</Link>
+            <Link href="https://portal.cactuserp.org/dashboard">Log in</Link>
           </Button>
           <Button asChild>
-            <Link href="/signup">Get Started</Link>
+            <Link href="https://portal.cactuserp.org/dashboard">Get Started</Link>
           </Button>
         </div>
 
